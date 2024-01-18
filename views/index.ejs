@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+       
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 700px;
+        height: 500px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+
+      }
+      h2 {
+        color: #1877f2;
+      }
+   
+      button {
+        background-color: #1877f2;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .hai {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><h1>WELCOME TO MY FIRST WEB PAGE</h1>
+        <h3>Have A Nice Day Friends</h3></div>
+      <h2>LOGED PERSONS :</h2>
+      <ol style="color: green;">
+        <% for (let i= 0; i< alluser.length; i++) { %>
+        <li style="text-align: left;font-weight: bolder;"><%= alluser[i].fname%></li>
+          
+       <% } %>  
+      </ol>
+      
+      <div><button><a style="width: 100%;text-decoration: none;color: #fff;" href="/logout">LogOut</a></button></div>
+    </div>
+    
+  </body>
+</html>
+
+
